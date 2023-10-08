@@ -44,11 +44,6 @@ Source: "D:\GLPI-Agent-WD-svc\api-ms-win-core-path-l1-1-0.dll"; DestDir: "{app}"
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
 
 [Run]
-;Filename: "C:\Program Files\GLPI-Agent\agent-wd\unins000.exe"; Parameters: "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART"; Flags:  skipifdoesntexist 
-;Filename: "del"; Parameters: "C:\Program Files\GLPI-Agent\agent-wd\unins000.exe"; Flags: runhidden
-Filename: "schtasks"; Parameters: "/delete /tn GLPI-Agent-watchdog  /F"; Flags: runhidden
-
-
 Filename: "sc"; Parameters: "stop glpi-agent-wd"; Flags: runhidden
 Filename: "sc"; Parameters: "delete glpi-agent-wd"; Flags: runhidden
 Filename: "{app}\agent-wd-svc.exe"; Parameters: "install"; Flags: runhidden
