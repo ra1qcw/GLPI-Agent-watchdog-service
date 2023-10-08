@@ -1,10 +1,10 @@
 # GLPI-Agent-watchdog-service
 Check GLPI server and agent and restar agent if no answer.
 
-**Compilation**
+**Compilation**:
 Install Python 3.11, nuitka and nuitka-winsvc, configure and run nuitka-compile.bat.
 
-**Installer**
+**Installer**:
 Install Inno Setup, use agent-wd.svc to make installation file.
 
 
