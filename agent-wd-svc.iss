@@ -13,12 +13,10 @@ AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisher={#MyAppPublisher}
-;DefaultDirName="C:\Program Files\GLPI-Agent\agent-wd"\{#MyAppName}
 DefaultDirName="C:\Program Files\GLPI-Agent\agent-wd-svc"
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-; Uncomment the following line to run in non administrative install mode (install for current user only.)
-;PrivilegesRequired=lowest
+
 OutputDir=D:\GLPI-Agent-WD-svc\setup
 OutputBaseFilename=awd-setup
 Compression=lzma
@@ -37,8 +35,6 @@ Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
 Source: "D:\GLPI-Agent-WD-svc\agent-wd-svc.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "D:\GLPI-Agent-WD-svc\restart-service.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "D:\GLPI-Agent-WD-svc\api-ms-win-core-path-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-;Source: "D:\GLPI-Agent-WD-svc\"; DestDir: "{app}"; Flags: ignoreversion
-; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
