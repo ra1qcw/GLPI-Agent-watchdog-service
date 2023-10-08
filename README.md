@@ -2,7 +2,7 @@
 Check GLPI server and agent and restar agent if no answer.
 
 **Compilation**:
-Place api-ms-win-core-path-l1-1-0.dll file to the same dirrectory as nu.py
+Place api-ms-win-core-path-l1-1-0.dll file to the same dirrectory as agent-svc-wd.py (for Windows 7 support).
 Install Python 3.11, nuitka and nuitka-winsvc, configure and run nuitka-compile.bat.
 
 **Installer**:
