@@ -1,4 +1,4 @@
-D:\Python311-32\Scripts\nuitka.bat agent-wd-svc.py --standalone --onefile --remove-output --jobs=6 ^
+nuitka agent-wd-svc.py --standalone --onefile --remove-output --jobs=6 ^
  --include-package=win32timezone ^
  --include-data-files=api-ms-win-core-path-l1-1-0.dll=api-ms-win-core-path-l1-1-0.dll ^
  --windows-service ^
